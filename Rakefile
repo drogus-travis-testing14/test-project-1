@@ -12,8 +12,6 @@ task :test do
     putc '.'
     $stdout.flush
   end
-  # foo!
-  exit rand(2)
 end
 
 task :default => :test
