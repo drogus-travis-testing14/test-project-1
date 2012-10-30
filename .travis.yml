@@ -11,5 +11,7 @@ matrix:
 branches:
   only: master
 notifications:
-  email: me@svenfuchs.com
+  email: 
+    recipients: me@svenfuchs.com
+    on_success: always
   # hipchat: f237f635b6c08363980e0e6d16f70f@Stache Land
