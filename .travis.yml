@@ -10,7 +10,7 @@ matrix:
     - rvm: 1.9.3
 branches:
   only: master
-notifications:
-  email: false
+#notifications:
+#  email: false
   # hipchat: f237f635b6c08363980e0e6d16f70f@Stache Land
 
