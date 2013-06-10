@@ -10,6 +10,10 @@ matrix:
     - rvm: 1.9.3
 branches:
   only: master
+
+env:
+  global:
+    - secure: "BW50XSVGznshn+9vrDrUaq9cvhlKc0HhhEyXtZVzW7TvVSW5auYkrZ64wa5i\nPOV8sB2FaN3fhOHwaLs7f53nGNmnnB4rGl75qn5um28E3gMBN+IQvrszwwUs\nWCVKhlgif/G67b64PwQI4qgrzLH/il1w9c6tHYHibe7T9xP1rIg="
 #notifications:
 #  email: false
   # hipchat: f237f635b6c08363980e0e6d16f70f@Stache Land
