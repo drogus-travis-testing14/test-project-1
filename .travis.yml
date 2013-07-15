@@ -1,19 +1,23 @@
 script: 'ruby -e "p RUBY_VERSION"; true && rake test'
+
 rvm:
   - 1.8.7
   - 1.9.2
   - 1.9.3
+
 matrix:
   exclude:
     - rvm: rbx
   allow_failures:
     - rvm: 1.9.3
+
 branches:
   only: master
 
 env:
   global:
     - secure: "rne1JHqtbfmiDxHW7vvD2GL2ds2EPxU9KVR5wmXaCgIYg3rLmXlUHCSvCcH9\njhtZm4/TLGdyUcD4bV2zxFJTZcsv8c5kzJtAChUob05Qk3P0ZpblNCBf0dGB\nHH9Py/AmGvmGyVB2ey+nf6ifBzaBqs4gdXmkIhOtzrG0Tarc5VQ="
+
 #notifications:
 #  email: false
   # hipchat: f237f635b6c08363980e0e6d16f70f@Stache Land
