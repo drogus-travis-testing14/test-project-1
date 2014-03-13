@@ -1,13 +1,5 @@
 script: 'ruby -e "p RUBY_VERSION"; true && rake test'
 
 rvm:
-  - 2.1.1
-  - 2.0.0
-
-branches:
-  only: master
-
-env:
-  global:
-    - secure: "rne1JHqtbfmiDxHW7vvD2GL2ds2EPxU9KVR5wmXaCgIYg3rLmXlUHCSvCcH9\njhtZm4/TLGdyUcD4bV2zxFJTZcsv8c5kzJtAChUob05Qk3P0ZpblNCBf0dGB\nHH9Py/AmGvmGyVB2ey+nf6ifBzaBqs4gdXmkIhOtzrG0Tarc5VQ="
-
+- 2.1.1
+- 2.0.0
