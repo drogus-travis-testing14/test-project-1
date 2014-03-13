@@ -3,11 +3,6 @@ script: 'ruby -e "p RUBY_VERSION"; true && rake test'
 rvm:
   - 2.1.1
   - 2.0.0
-  - 1.9.3
-
-matrix:
-  allow_failures:
-    - rvm: 1.9.3
 
 branches:
   only: master
