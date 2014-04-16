@@ -1,4 +1,12 @@
-script: 'ruby -e "p RUBY_VERSION"; true && rake test'
+language: ruby
+
+services:
+  - riak
+  
+before_install:
+  - sudo service riak start
+
+# script: 'ruby -e "p RUBY_VERSION"; true && rake test'
 
 rvm:
 - 2.1.1
