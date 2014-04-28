@@ -6,6 +6,7 @@ script:
   - ruby -v
   - bundle --version
 
-before_install: cat ~/.rvm/gemsets/default.gems
-
+before_install:
+  - cat ~/.rvm/gemsets/global.gems
+  - cat ~/.rvm/gemsets/default.gems
 
