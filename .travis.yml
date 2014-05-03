@@ -3,5 +3,5 @@ language: ruby
 rvm: 2.1.1
 
 script:
-  - ruby -v
-  - bundle --version
+  - echo -ne "\033[34;4munderlined\033[0m; not underlined"
+  
