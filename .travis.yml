@@ -3,6 +3,8 @@ language: ruby
 rvm:
   - 1.9.3
   
+bundler_args: --without debug
+  
 script:
   - echo -ne "\033[34;4munderlined\033[0m; not underlined"
   
