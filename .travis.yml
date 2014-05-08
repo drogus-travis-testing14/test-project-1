@@ -2,7 +2,11 @@ language: ruby
 
 install:
   - true
+  
+script:
+  - true
 
 before_install:
+  - ls -l /etc/apt/sources.list.d
   - sudo apt-get remove git && sudo apt-get remove git-man && sudo apt-get install git-man && sudo apt-get install git
   - git --version
