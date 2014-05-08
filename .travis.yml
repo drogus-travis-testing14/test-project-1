@@ -4,5 +4,5 @@ install:
   - true
 
 script:
-  - find ~ -name hhvm-switcher.bash -exec cat {} \;
-  - find ~ -name phpenv\* -exec cat {} \;
+  - find ~ -name hhvm-switcher.bash -print -exec cat {} \;
+  - find ~ -name phpenv\* -print -exec cat {} \;
