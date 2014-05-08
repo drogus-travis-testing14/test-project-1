@@ -10,3 +10,5 @@ install:
 script:
   - find ~ -name hhvm-switcher.bash -print -exec cat {} \;
   - find ~ -name phpenv\* -print -exec cat {} \;
+  - sed 's/^export PATH/export PATH=$PATH:\/home\/travis\/.phpenv\/bin/' -i.bak /home/travis/.phpenv/bin/phpenv && cat /home/travis/.phpenv/bin/phpenv
+  - sed 's/^PHP_VERSION=/PHP_VERSION=$(\/home\/travis\/.phpenv\/bin\/phpenv version-name)/' -i.bak /home/travis/.phpenv/rbenv.d/exec/hhvm-switcher.bash && cat /home/travis/.phpenv/rbenv.d/exec/hhvm-switcher.bash
