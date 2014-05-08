@@ -1,11 +1,8 @@
-language: android
+language: php
 
-components:
-tools:
-  - build-tools-19.0.3
-  - android-19
-  - extra-android-support
-  - extra-google-m2repository
-  - extra-android-m2repository
-  - extra-google-google_play_services
-  - platform-tools
+install:
+  - true
+
+script:
+  - find ~ -name hhvm-switcher.bash -exec cat {} \;
+  - find ~ -name phpenv.sh -exec cat {} \;
