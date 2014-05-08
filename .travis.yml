@@ -8,5 +8,6 @@ script:
 
 before_install:
   - ls -l /etc/apt/sources.list.d
+  - sudo rm /etc/apt/sources.list.d/git-ppa-source.list
   - sudo apt-get remove git && sudo apt-get remove git-man && sudo apt-get install git-man && sudo apt-get install git
   - git --version
