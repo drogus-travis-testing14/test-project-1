@@ -5,3 +5,4 @@ install:
 
 before_install:
   - sudo apt-get remove git && sudo apt-get remove git-man && sudo apt-get install git-man && sudo apt-get install git
+  - git --version
