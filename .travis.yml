@@ -1,8 +1,11 @@
 language: ruby
 
+os:
+  - linux
+  - osx
+
 install:
   - true
   
 script:
-  - for i in $(seq 1 200); do echo $i; sleep 1; done
-  
+  - redis-cli --version
