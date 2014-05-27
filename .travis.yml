@@ -1,11 +1,11 @@
-language: ruby
+language: haskell
 
-os:
-  - linux
-  - osx
+ghc: 7.8.2
 
 install:
   - true
   
 script:
-  - redis-cli --version
+  - echo $PATH
+  - ghc_find 7.8.2
+  
