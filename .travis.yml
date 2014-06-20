@@ -1,12 +1,9 @@
 language: ruby
-
-os:
-  - osx
-
-install:
-  - true
-  
+cache:
+  directories:
+    - something-to-cache
 script:
-  - type -a tar
-  - tar --version
-
+  - "touch something-to-cache/$(date '+%s')"
+  - "ls something-to-cache"
+after_success:
+  - "for f in ~/.casher/*; do echo $f; cat $f; echo; done"
