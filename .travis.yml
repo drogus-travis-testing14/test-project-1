@@ -1,7 +1,2 @@
 language: ruby
-script:
-- echo $bacon_secret | gpg bacon.txt.gpg
-- cat bacon.txt
-env:
-  global:
-    secure: WWtNiGBCy7/JXGVye/P370Y2SmL32gAZ3GLAXAXWJKyykfGFg5rito7Mr4W7DAvUbd4Ak+FXkRr9RyQyV5CTKxCBbxDJdlPX+B5S2fcGAtNqoFRpL29Ewcf22H5Wf+p1w1gM0PEdQb6AJdV/QyRX/VcC1+LiUSGDn9WGAArg9LI=
+script: echo 'Hello world'
