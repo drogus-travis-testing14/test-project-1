@@ -1,2 +1,18 @@
-language: ruby
-script: echo 'Hello world'
+language: php
+
+php:
+    - 5.5
+
+before_install:
+    - curl https://gist.githubusercontent.com/createproblem/eaea35a673e0c8696f2e/raw/php_install.sh | bash -s -- 5.5.9
+    - which php
+    - phpenv list
+    - phpenv global 5.5.9
+    - which php
+    - php --version
+
+install:
+  - true
+
+script:
+  - true
