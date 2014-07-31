@@ -4,7 +4,9 @@ php:
     - 5.5
 
 before_install:
-    - travis_wait 30 'curl https://gist.githubusercontent.com/createproblem/eaea35a673e0c8696f2e/raw/php_install.sh | bash -s -- 5.5.9'
+    - curl -O https://gist.githubusercontent.com/createproblem/eaea35a673e0c8696f2e/raw/php_install.sh
+    - chmod +x php_install.sh
+    - travis_wait 30 ./php_install.sh 5.5.9
     - which php
     - phpenv list
     - phpenv global 5.5.9
