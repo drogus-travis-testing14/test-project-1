@@ -1,8 +1,7 @@
-language: ruby
+language: erlang
 
-rvm:
-    - 1.9.3
-    - "rbx-2"
+otp_release:
+    - 17.1
 
 install:
   - true
