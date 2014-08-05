@@ -1,7 +1,8 @@
-language: erlang
+language: python
 
-otp_release:
-    - 17.1
+python:
+    - pypy3
+    - 3.4
 
 install:
   - true
