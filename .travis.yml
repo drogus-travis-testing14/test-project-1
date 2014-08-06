@@ -1,7 +1,10 @@
 language: python
 
+python:
+  - 3.4.0
+  
 install:
-  - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  - true
 
 script:
   - true
