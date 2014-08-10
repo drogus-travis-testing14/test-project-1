@@ -1,11 +1,7 @@
-language: python
+language: android
 
-python:
-  - 3.4.0
-  
 install:
   - true
 
 script:
-  - true
-
+  - echo $ANDROID_HOME
