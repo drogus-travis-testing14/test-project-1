@@ -5,3 +5,5 @@ install:
 
 script:
   - echo $ANDROID_HOME
+
+sudo: false
