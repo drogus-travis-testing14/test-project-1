@@ -1,9 +1,14 @@
-language: android
+language: node_js
+
+addons:
+  postgresql: "9.3"
 
 install:
   - true
 
 script:
-  - echo $ANDROID_HOME
-
-sudo: false
+  - echo $PATH
+  - which psql
+  - psql --version
+  - which pg_dump
+  - pg_dump --version
