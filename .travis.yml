@@ -1,3 +1,6 @@
-language: C
+language: php
+
 install: true
-script: true
+
+script:
+  - phpenv versions
