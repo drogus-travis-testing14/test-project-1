@@ -1,4 +1,4 @@
-language: python
+language: python #all the python
 
 python:
   - 2.7
