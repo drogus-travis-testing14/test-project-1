@@ -1,8 +1,5 @@
 language: perl
 
-services:
-  - couchdb
-
 install: true
 
 script:
