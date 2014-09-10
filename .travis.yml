@@ -1,6 +1,9 @@
 language: perl
 
+services:
+  - couchdb
+
 install: true
 
 script:
-  - perlbrew list
+  - ps -ef|grep couch
