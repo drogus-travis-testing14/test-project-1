@@ -10,5 +10,6 @@ install: true
 
 script:
   - find /usr -name elasticsearch
+  - ls -la /usr/share/elasticsearch/bin
   - sleep 15
   - curl -XGET localhost:9200 2>/dev/null| grep number
