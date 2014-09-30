@@ -9,6 +9,6 @@ services:
 install: true
 
 script:
-  - which elasticsearch
+  - find /usr -name elasticsearch
+  - sleep 15
   - curl -XGET localhost:9200 2>/dev/null| grep number
-  - true
