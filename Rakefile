@@ -7,7 +7,7 @@ task :test do
 #    puts "#{key}: #{ENV[key]}"
 #  end
 
-  1.upto(100) do
+  1.upto(1) do
     sleep(1)
     putc '.'
     $stdout.flush
