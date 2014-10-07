@@ -1,18 +1,5 @@
 language: ruby
 
-sudo: false
+install: gem install jasmine -v 1.3.2
 
-rvm:
-  - 2.2
-
-services:
-  - elasticsearch
-
-install: true
-
-script:
-  - find /usr -name elasticsearch
-  - ls -la /usr/share/elasticsearch/bin
-  - sleep 15
-  - curl -XGET localhost:9200 2>/dev/null| grep number
-  - rake
+script: true
