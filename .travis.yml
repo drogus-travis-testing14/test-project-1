@@ -1,4 +1,8 @@
-sudo: false
-language: go
+language: php
+
+php:
+  - hhvm
+  - "5.2.17"
+
 install: true
 script: true
