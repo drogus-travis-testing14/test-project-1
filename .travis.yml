@@ -1,4 +1,6 @@
-language: android
+language: python
 
-install: true
+install: 
+- time sudo apt-get -y update
+- time sudo apt-get -y install zookeeper zookeeperd
 script: true
