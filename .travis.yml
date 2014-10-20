@@ -1,8 +1,7 @@
-sudo: false
-
 language: bash
 
-install: 
-- time sudo apt-get -y update
-- time sudo apt-get -y install zookeeper zookeeperd
+addons:
+  firefox: "30.0"
+
+install: true
 script: true
