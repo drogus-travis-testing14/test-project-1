@@ -1,5 +1,7 @@
 language: bash
 
+sudo: false
+
 addons:
   firefox: "30.0"
 
