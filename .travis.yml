@@ -1,9 +1,14 @@
-language: bash
+language: android
+android:
+  components:
+    - build-tools-19.1.0
+    - android-19
+    - sysimg-19
+    - sysimg-8
+    - extra-android-support
+  licenses:
+    - android-sdk-license-5be876d5
+    - android-sdk-license-bcbbd656
+    - .*intel.+
 
-sudo: false
-
-addons:
-  firefox: "30.0"
-
-install: true
 script: true
