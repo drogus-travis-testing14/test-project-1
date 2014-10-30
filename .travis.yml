@@ -1,6 +1,11 @@
 sudo: false
 language: ruby
 
+addons:
+  ssh_known_hosts:
+  - bitbucket.org
+  - sammich.meatballhat.com
+
 matrix:
    include:
     - os: osx
