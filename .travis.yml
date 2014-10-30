@@ -15,6 +15,11 @@ script: true
 install: true
 
 notifications:
+  email:
+    recipients:
+      - me@svenfuchs.com
+    on_success: always
+    on_failure: always
   irc: 
     channels: irc.freenode.org#travis
   campfire:
