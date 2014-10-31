@@ -7,6 +7,8 @@ cache:
 script: true
 
 before_install:
-   - brew outdated xctool || brew upgrade xctool
+  - xctool --version
+  - brew update; brew outdated xctool || brew upgrade xctool
 
-install: true
+install:
+  - xctool --version
