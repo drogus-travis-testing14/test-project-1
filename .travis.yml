@@ -1,35 +1,12 @@
-sudo: false
-language: ruby
+language: objective-c
 
-addons:
-  ssh_known_hosts:
-  - bitbucket.org
-  - sammich.meatballhat.com
-
-matrix:
-   include:
-    - os: osx
-      compiler: gcc
-      env: JULIAVERSION="juliareleases"
-    - os: linux
-      compiler: gcc
-      env: JULIAVERSION="julianightlies"
+cache:
+  directories:
+    - /usr/local/Cellar/xctool
 
 script: true
 
-install: true
+before_install:
+   - brew outdated xctool || brew upgrade xctool
 
-notifications:
-  email:
-    recipients:
-      - me@svenfuchs.com
-    on_success: always
-    on_failure: always
-  irc: 
-    channels: irc.freenode.org#travis
-  campfire:
-    rooms:
-      - secure: "FYd2nZjSOnzG0PoCfQ4mHYgjdj6W1C8jLoM6j+OsiLFDo37ShIwuMDjXkBNurUYY1ZyGLPZFngiC4QDZCw1RwefqMukjMqMG4BMt5SV3PNnodrJqLYcT6UfbzwDx8KaoiqClwBHGChzKj+2LgGSwhXxDwO7MqX4snJHTOLAwNy4="
-    template:
-      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message} (details: %{build_url}, changes: %{compare_url})'
-  slack: 'travisci:pRcz0OulYTjTp84o2tOhz97v#development'
+install: true
