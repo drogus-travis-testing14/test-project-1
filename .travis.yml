@@ -1,4 +1,5 @@
-language: ruby
+sudo: false
+language: bash
 addons:
   ssh_known_hosts:
   - bitbucket.org
