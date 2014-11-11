@@ -1,5 +1,6 @@
 sudo: false
 language: bash
+cache: bundler
 addons:
   ssh_known_hosts:
   - bitbucket.org
