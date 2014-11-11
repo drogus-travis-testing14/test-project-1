@@ -1,5 +1,5 @@
 sudo: false
-language: bash
+# language: bash
 cache: bundler
 addons:
   ssh_known_hosts:
