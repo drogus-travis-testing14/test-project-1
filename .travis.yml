@@ -1,10 +1,7 @@
 sudo: false
 # language: bash
-cache: bundler
 addons:
-  ssh_known_hosts:
-  - bitbucket.org
-  - sammich.meatballhat.com
+  firefox: "29.0"
 env:
 - FOO=1
 # - FOO=2
@@ -25,5 +22,6 @@ env:
 # - FOO=17
 # - FOO=18
 # - FOO=19
-script: true
+script: pwd
+before_install: pwd
 install: true
