@@ -1,7 +1,7 @@
 sudo: false
 # language: bash
 addons:
-  firefox: "29.0"
+  firefox: "30.0"
 env:
 - FOO=1
 # - FOO=2
@@ -23,5 +23,9 @@ env:
 # - FOO=18
 # - FOO=19
 script: pwd
-before_install: pwd
+before_install:
+  - pwd
+  - echo $PATH
+  - which firefox
+  - firefox --version
 install: true
