@@ -1,3 +1,6 @@
 language: objective-c
 cache:    bundler
 script:   true
+
+dist: precise
+group: current
