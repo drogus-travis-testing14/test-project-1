@@ -4,5 +4,9 @@ script:   true
 install: true
 
 
-dist: precise
-group: current
+notifications:
+  email:
+    recipients:
+      - hiro@travis-ci.com
+    on_success: always
+    on_failure: always
