@@ -3,6 +3,8 @@ cache:    bundler
 script:   true
 install: true
 
+services:
+  - cassandra
 
 notifications:
   email:
