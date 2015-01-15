@@ -6,5 +6,9 @@ rvm:
 sudo: false
 
 script:
-  - true
+  - false
+  
+notifications:
+  email:
+    builds@travis-ci.com
 
