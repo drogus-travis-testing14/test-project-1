@@ -11,4 +11,3 @@ script:
 notifications:
   email:
     builds@travis-ci.com
-
