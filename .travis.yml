@@ -9,6 +9,6 @@ script:
   - false
 
 notifications:
-  webooks: http://requestb.in/zorrfzzo
+  webhooks: http://requestb.in/zorrfzzo
   
   ########
