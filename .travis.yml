@@ -7,7 +7,3 @@ sudo: false
 
 script:
   - false
-  
-notifications:
-  email:
-    builds@travis-ci.com
