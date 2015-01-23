@@ -1,14 +1,11 @@
-language: ruby
-
-rvm:
-  - 2.2.0
-
+language: node_js
 sudo: false
+node_js:
+- '0.10'
+notifications:
+  email:
+    on_success: never  # [always|never|change]
+    on_failure: always  # [always|never|change]
 
 script:
-  - false
-
-notifications:
-  webhooks: http://requestb.in/zorrfzzo
-  
-  ########
+  - true
