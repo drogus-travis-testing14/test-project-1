@@ -5,7 +5,7 @@ node_js:
 install:
   - sudo apt-get update -qq
   - sudo ls /etc/apt/sources.list.d
-  - cat /etc/apt/sources.list.d/basho-source.list
+  - cat /etc/apt/sources.list.d/basho-riak-source.list
 
 script:
   - true
