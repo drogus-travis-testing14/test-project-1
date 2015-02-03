@@ -3,6 +3,8 @@ node_js:
 - iojs
 
 install:
+  - git --unshallow
+  - git --version
   - sudo apt-get update -qq
   - sudo ls /etc/apt/sources.list.d
   - cat /etc/apt/sources.list.d/basho-riak-source.list
