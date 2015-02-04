@@ -1,12 +1,14 @@
 language: node_js
+
+group: dev
+
 node_js:
 - iojs
 
 install:
   - git --version
   - sudo apt-get update -qq
-  - sudo ls /etc/apt/sources.list.d
-  - cat /etc/apt/sources.list.d/basho-riak-source.list
+  - sudo apt-get install cmake
 
 script:
   - true
