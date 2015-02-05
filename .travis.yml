@@ -1,7 +1,5 @@
 language: node_js
 
-group: dev
-
 node_js:
 - iojs
 
@@ -9,6 +7,8 @@ install:
   - git --version
   - sudo apt-get update -qq
   - sudo apt-get install cmake
+  - sudo apt-get install tzdata
+  - sudo apt-get install libgearman-dev
 
 script:
   - true
