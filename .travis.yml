@@ -3,12 +3,10 @@ language: node_js
 node_js:
 - iojs
 
-notifications:
-  irc:
-    channels:
-      - "ne.us.nu#anathema"
-    on_success: always
-    on_failure:always
+addons:
+  - postgresql: "9.4"
 
+install:
+  - true
 script:
   - true
