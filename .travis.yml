@@ -4,7 +4,7 @@ node_js:
 - iojs
 
 addons:
-  - postgresql: "9.4"
+  postgresql: "9.4"
 before_script:
   - psql -c "select version();" -U postgres
 install:
