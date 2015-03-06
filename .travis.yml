@@ -2,7 +2,6 @@ language: node_js
 
 node_js:
 - iojs
-
 addons:
   postgresql: "9.4"
 before_script:
