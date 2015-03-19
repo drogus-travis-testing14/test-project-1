@@ -1,7 +1,8 @@
 language: ruby
 
-dist: trusty
+group: dev
 
 install: true
 
-script: true
+script:
+  - mysql --version
