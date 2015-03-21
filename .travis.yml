@@ -6,7 +6,7 @@ install:
   - true
 
 before_script:
-  - sudo service mysql start
+  - sudo apt-get install libmysqlclient-dev
   - mysql -e 'create database myapp_test;'
 script:
   - true
