@@ -6,6 +6,7 @@ install:
   - true
 
 before_script:
+  - sudo service mysql start
   - mysql -e 'create database myapp_test;'
 script:
   - true
