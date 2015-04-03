@@ -6,7 +6,7 @@ before_install:
   - sudo rm /etc/apt/sources.list.d/mysql.list
   - sudo service mysql stop
   - sudo apt-get purge mysql-common mysql-community-server mysql-community-client mysql-client libmysqlclient18 libmysqlclient-dev mysql-server
-  - sudo apt-get install libmysqlclient-dev libmysqlclient18 mysql-client mysql-server
+  - sudo apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" install libmysqlclient-dev libmysqlclient18 mysql-client mysql-server
 
 install:
   - true
