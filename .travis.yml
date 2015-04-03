@@ -2,10 +2,19 @@ language: ruby
 
 group: dev
 
+before_install:
+  - sudo rm /etc/apt/sources.list.d/mysql.list
+  - sudo service mysql stop
+  - sudo apt-get purge mysql-common mysql-community-server
+  - sudo env V=5.5.41-0ubuntu0.12.04.1 apt-get -f -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install libmysqlclient-dev=$V libmysqlclient18=$V mysql-client=$V mysql-server=$V 
+  - sudo service mysql restart
+
 install:
   - true
 
 before_script:
+  - mysql --version
   - mysql -e 'create database myapp_test;'
+
 script:
   - true
