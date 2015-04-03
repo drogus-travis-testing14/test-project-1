@@ -6,7 +6,7 @@ before_install:
   - sudo rm /etc/apt/sources.list.d/mysql.list
   - sudo service mysql stop
   - sudo apt-get purge mysql-common mysql-community-server
-  - sudo apt-get -f -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install libmysqlclient-dev=5.5.41-0ubuntu0.12.04.1 libmysqlclient18=5.5.41-0ubuntu0.12.04.1 mysql-client=5.5.41-0ubuntu0.12.04.1 mysql-server=5.5.41-0ubuntu0.12.04.1
+  - sudo apt-get -f -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" install libmysqlclient-dev=5.5.41-0ubuntu0.12.04.1 libmysqlclient18=5.5.41-0ubuntu0.12.04.1 mysql-client=5.5.41-0ubuntu0.12.04.1 mysql-server=5.5.41-0ubuntu0.12.04.1
   - sudo service mysql restart
 
 install:
