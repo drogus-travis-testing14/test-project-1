@@ -18,7 +18,7 @@ install:
 
 before_script:
   - mysql --version
-  - mysql -e 'create database myapp_test;'
+  - mysql -u root -e 'create database myapp_test;'
 
 script:
   - true
