@@ -19,6 +19,8 @@ before_script:
   - mysql --version
   - mysql -u root -e "CREATE USER 'travis'@'%' IDENTIFIED BY ''"
   - mysql -u root -e "CREATE USER 'travis'@'localhost' IDENTIFIED BY ''"
+  - mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'travis'@'%'"
+  - mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'travis'@'localhost'"
   - mysql -e 'create database myapp_test;'
 
 script:
