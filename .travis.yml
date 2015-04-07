@@ -18,6 +18,7 @@ install:
 before_script:
   - mysql --version
   - mysql -u root -e "CREATE USER 'travis'@'%' IDENTIFIED BY ''"
+  - mysql -u root -e "CREATE USER 'travis'@'localhost' IDENTIFIED BY ''"
   - mysql -e 'create database myapp_test;'
 
 script:
