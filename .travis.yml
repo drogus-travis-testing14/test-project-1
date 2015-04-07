@@ -11,7 +11,7 @@ before_install:
   - sudo apt-get autoremove
   - sudo apt-get autoclean
   - sudo apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" install libmysqlclient-dev libmysqlclient18 mysql-client mysql-server
-  - sudo service mysql start
+  - sudo service mysql restart
 
 install:
   - true
