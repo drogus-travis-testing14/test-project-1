@@ -6,6 +6,7 @@ install:
   - true
 
 before_script:
+  - ls -l /var/run/mysqld/mysqld.sock
   - mysql --version
   - mysql -e 'create database myapp_test;'
 
