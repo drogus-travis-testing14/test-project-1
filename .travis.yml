@@ -1,5 +1,7 @@
 language: ruby
 
+group: dev
+
 install:
   - true
 
