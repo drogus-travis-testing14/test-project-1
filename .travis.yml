@@ -9,6 +9,7 @@ before_script:
   - ls -l /var/run/mysqld/mysqld.sock
   - mysql --version
   - mysql -e 'create database myapp_test;'
+  - ls -l /var/log/mysql
 
 script:
   - true
