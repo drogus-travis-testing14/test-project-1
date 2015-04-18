@@ -10,6 +10,7 @@ before_script:
   - mysql --version
   - mysql -e 'create database myapp_test;'
   - sudo ls -l /var/log/mysql
+  - sudo ls -l /etc/init.d/mysql && sudo cat /etc/init.d/mysql
 
 script:
   - true
