@@ -1,5 +1,7 @@
 language: ruby
 
+cache: apt
+
 install:
   - true
 
