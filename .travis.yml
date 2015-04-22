@@ -1,12 +1,4 @@
-language: ruby
+language: android
 
-cache: apt
+group: dev
 
-install:
-  - true
-
-script:
-  - sudo sh -c "wget -qO- https://get.docker.io/gpg | apt-key add -"
-  - sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-  - sudo sh -c "wget -qO- https://get.docker.io/builds/Linux/x86_64/docker-1.4.1.tgz |sudo tar zxf - -C /"
-  - sudo apt-get update
