@@ -1,11 +1,7 @@
-language: android
+language: ruby
 
-android:
-  components:
-    # Uncomment the lines below if you want to
-    # use the latest revision of Android SDK Tools
-    # - platform-tools
-    # - tools
+install: true
 
-    # The BuildTools version used by your project
-    - build-tools-22.0.1
+script:
+  - psql --version
+  - psql -U postgres -c 'SHOW SERVER_VERSION;'
