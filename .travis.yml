@@ -1,7 +1,6 @@
-language: ruby
+language: php
 
 install: true
 
 script:
-  - psql --version
-  - psql -U postgres -c 'SHOW SERVER_VERSION;'
+  - composer update
