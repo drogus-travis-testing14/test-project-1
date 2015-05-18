@@ -1,6 +1,6 @@
-language: php
+language: android
 
 install: true
 
 script:
-  - composer update
+  - true
