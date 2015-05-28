@@ -8,6 +8,8 @@ install: true
 script:
   - true
 
+sudo: false
+
 cache:
   directories:
     - $HOME/.nvm/versions/iojs/v2.0.2
