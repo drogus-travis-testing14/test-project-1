@@ -12,4 +12,4 @@ sudo: false
 
 cache:
   directories:
-    - $HOME/.nvm/versions/iojs/v2.0.2
+    - $HOME/.nvm/versions/io.js/v2.0.2
