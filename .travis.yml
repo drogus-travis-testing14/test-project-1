@@ -6,7 +6,7 @@ node_js:
 install: true
 
 script:
-  - true
+  - which node
 
 sudo: false
 
