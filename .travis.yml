@@ -8,15 +8,14 @@ addons:
 services:
   - redis-server
 before_script:
-  - psql -c 'create database radiation_test;' -U postgres
+  - true
 script:
-  - "bundle exec rake rubocop"
-  - "bundle exec rspec"
+  - true
+  
 deploy:
   provider: heroku
-  api_key:
-    secure: K6v+ca2CpVKwCLqLGxKu3O8g3IUjZ/Ja+s4UaMpIJBTc2KKds7opvIlrEIbvL8dVkJMkpQf2xMT8C7Mtvff47EzrkqvwEncMss4geXn8y/o7nDfMu6HuLxFTzFWgGzI8BvwIY3j9xjW91JjC2ZvWIU0j8/0phAwIgSQ2DlIciYdZ7szIMSYhutamjglX3lV1EceDgIx84UTDTzfbqbAblyzgHsBmAZVnbXllyCvgNFQ/C6xrPAwp8opw+Fqwg8oWfvySHLgCuaK1g64WTkTtoovoYDm946jb7Oy/MqPLQt08JxMFRjzNh75qXFohYHAuJmknEIvW+LQitMMrU0Q0yCn2Qdk+DcFotIW2XbiOz+A9kknnfpKOupuJp2AZKrxuHelvy6wByNfvsfIsCB0Xe04XOxkcYjYQRK/raP3zFGesG5l+qZjOr5XbldWqTHrwZcnB8OUkVW253E989nGg7WdSa6ZghK7aYp/kix5OZG1HTjSVMd6wDMbsfPwYYuBBu9+f53n9OO5aYpx/nwG6u57p7kH5j3tB5EtKOLGeo+eCH89jBG9AGLaIlpi0pTh/WUe5jn0A8JUHPUiFAn1h5//Kxk0uM+n4qI4PRCtKw3/OJ18+HI4TlELHBP5V99ZQHGWWZgmiTlGiDheutQAK1hxLuqaPgEw3/VusPGsDGZA=
-  app: radiation-staging
+  api_key: foobar
+  app: tadada-foobar
   on:
-    repo: artsy/radiation
+    repo: travis-pro/test-project
     branch: master
