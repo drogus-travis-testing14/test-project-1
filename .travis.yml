@@ -12,8 +12,7 @@ before_script:
 script:
   - true
 deploy:
-  provider: heroku
-  api_key: completely_insecure
-  strategy: api
-  app:
-    master: foobar-bar-bar
+  provider: s3
+  access_key_id:
+    secure: foobarrrrrrr
+
