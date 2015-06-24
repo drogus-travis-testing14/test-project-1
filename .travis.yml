@@ -6,7 +6,7 @@ install: true
 
 script:
   - xcodebuild -version
-  - "sudo xcode-switch -s '/Applications/Xcode 7.0b2.app/Contents/Developer'"
+  - "sudo xcode-select -s '/Applications/Xcode 7.0b2.app/Contents/Developer'"
   - xcodebuild -version
-  - "sudo xcode-switch -s '/Applications/Xcode 6.4b4.app/Contents/Developer'"
+  - "sudo xcode-select -s '/Applications/Xcode 6.4b4.app/Contents/Developer'"
   - xcodebuild -version
