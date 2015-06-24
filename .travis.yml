@@ -1,17 +1,12 @@
-sudo: false
-language: ruby
-cache: bundler
-rvm:
-  - 2.1.6
-addons:
-  postgresql: "9.3"
-services:
-  - redis-server
-before_script:
-  - true
+language: objective-c
+
+osx_image: 427bf24b-9450-4312-b586-0d25dcf7215c
+
+install: true
+
 script:
-  - true
-deploy:
-  provider: heroku
-  api_key:
-    secure: "TWKrYXrc87INYQcjco6YoyLwif2QllqVHTmHWzZ3Cx+WXA853fkhDyKvcHYxlYiC+iAba0nkZ4mP5vczTuwT7Y0BJS1V96odR2zkOTAvs2beKFeAkqTrU+0Ijsx6G6xJ1HmSjLCz7eyWcxBy4TK7VAnCK1wcFcl1rqerfywpniM="
+  - xcodebuild -version
+  - "sudo xcode-switch -s '/Applications/Xcode 7.0b2.app/Contents/Developer'"
+  - xcodebuild -version
+  - "sudo xcode-switch -s '/Applications/Xcode 6.4b4.app/Contents/Developer'"
+  - xcodebuild -version
