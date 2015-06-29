@@ -1,12 +1,10 @@
-language: objective-c
+language: ruby
 
-osx_image: 427bf24b-9450-4312-b586-0d25dcf7215c
+sudo: false
 
-install: true
+cache:
+  bundler: true
 
 script:
-  - xcodebuild -version
-  - "sudo xcode-select -s '/Applications/Xcode 7.0b2.app/Contents/Developer'"
-  - xcodebuild -version
-  - "sudo xcode-select -s '/Applications/Xcode 6.4b4.app/Contents/Developer'"
-  - xcodebuild -version
+  - true
+
