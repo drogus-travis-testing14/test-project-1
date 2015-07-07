@@ -1,10 +1,16 @@
-language: ruby
-
 sudo: false
+language: node_js
+node_js:
+  - 0.10
+
+env:
+  global:
+    - if [[ "$TRAVIS_TAG" != "" ]]; then BUILD_NAME=${TRAVIS_TAG}-${TRAVIS_COMMIT}.zip; else BUILD_NAME=${TRAVIS_BRANCH}-${TRAVIS_COMMIT}.zip; fi;
 
 cache:
-  bundler: true
+  directories:
+    - node_modules
 
-script:
-  - cat $CASHER_DIR/bin/casher
+install: true
 
+script: true
