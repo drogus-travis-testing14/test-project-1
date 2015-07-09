@@ -1,22 +1,9 @@
-sudo: false
-language: node_js
-node_js:
-  - 0.10
-
-env:
-  global:
-    - if [[ "$TRAVIS_TAG" != "" ]]; then BUILD_NAME=${TRAVIS_TAG}-${TRAVIS_COMMIT}.zip; else BUILD_NAME=${TRAVIS_BRANCH}-${TRAVIS_COMMIT}.zip; fi;
+language: objective-c
 
 cache:
-  directories:
-    - node_modules
+  cocoapods: true
 
 install: true
 
 script: true
 
-deploy:
-  provider: s3
-  access_key_id:
-    secure: FOOBAR
-    
