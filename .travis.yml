@@ -1,14 +1,11 @@
-language: objective-c
+language: ruby
 
-cache:
-  cocoapods: true
-
-osx_image: beta-xcode6.3
-
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install google-perftools
+  
 install: true
 
-before_script:
-  - echo $PATH
-
-script: true
+script:
+  - find / -perm -4000 -o -perm -2000 -exec ls -l {} \;
 
