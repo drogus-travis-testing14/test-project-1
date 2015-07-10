@@ -12,3 +12,6 @@ install:
 script:
   - true
 
+after_script:
+  - cat $CASHER_DIR/push.log
+  - cat $CASHER_DIR/push.err.log
