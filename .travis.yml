@@ -3,7 +3,8 @@ language: ruby
 os: osx
 
 cache:
-  - foo
+  directories:
+    - foo
 
 install:
   - touch foo/bar
