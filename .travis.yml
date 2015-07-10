@@ -10,7 +10,8 @@ install:
   - touch foo/bar
 
 script:
-  - true
+  - echo "sleeping 15 minutes"
+  - sleep 900
 
 after_script:
   - cat $CASHER_DIR/push.log
