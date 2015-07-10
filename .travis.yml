@@ -2,6 +2,8 @@ language: ruby
 
 os: osx
 
+osx_image: beta-xcode6.3
+
 cache:
   directories:
     - foo
