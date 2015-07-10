@@ -1,11 +1,13 @@
 language: ruby
 
-before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install google-perftools
-  
-install: true
+os: osx
+
+cache:
+  - foo
+
+install:
+  - touch foo/bar
 
 script:
-  - sudo find / -type f -a \( -perm -4000 -o -perm -2000 \) -exec ls -l {} \;
+  - true
 
