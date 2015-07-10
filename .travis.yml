@@ -11,7 +11,7 @@ install:
 
 script:
   - I=0
-  - while [ $I -lt 900 ]; do echo .; let I=$I+1; done
+  - while [ $I -lt 900 ]; do echo .; let I=$I+1; sleep 1; done
 
 after_script:
   - cat $CASHER_DIR/push.log
