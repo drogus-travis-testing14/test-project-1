@@ -2,10 +2,6 @@ language: ruby
 
 sudo: false
 
-env:
-  global:
-    - FOO=BAR
-
 before_install:
   - umask
   - echo -e "machine github.com\n  login $FOO" >> ~/.netrc
