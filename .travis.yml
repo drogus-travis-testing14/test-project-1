@@ -12,6 +12,7 @@ before_cache:
   - cat $CASHER_DIR/mtime.yml
 
 install:
+  - cat $CASHER_DIR/paths || true
   - cat $CASHER_DIR/mtime.yml
   - mkdir -p foo
   - mkdir -p bar
