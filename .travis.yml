@@ -1,9 +1,11 @@
 language: objective-c
 
 cache:
+  edge: true
   directories:
     - foo
     - bar
+    - baz
 
 before_cache:
   - cat $CASHER_DIR/md5sums_before
