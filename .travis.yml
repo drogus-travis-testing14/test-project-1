@@ -16,3 +16,6 @@ install:
   - mkdir -p bar
   - echo "FOOBAR" > foo/bar
   - echo "BARBAZ" > bar/baz
+
+script:
+  - which md5deep
