@@ -1,9 +1,16 @@
-language: ruby
+language: objective-c
 
-sudo: false
+cache:
+  directories:
+    - foo
+    - bar
 
-before_install:
-  - umask
-  - echo -e "machine github.com\n  login $FOO" >> ~/.netrc
-  - ls -l ~/.netrc
-  - cat ~/.netrc
+before_cache:
+  - cat $CASHER_DIR/md5sums_before
+  - cat $CASHER_DIR/md5sums_after
+
+install:
+  - mkdir -p foo
+  - mkdir -p bar
+  - echo "FOOBAR" > foo/bar
+  - echo "BARBAZ" > bar/baz
