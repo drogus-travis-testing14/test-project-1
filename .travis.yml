@@ -1,7 +1,6 @@
 language: objective-c
 
 cache:
-  edge: true
   directories:
     - foo
     - bar
