@@ -1,23 +1,9 @@
-language: objective-c
+language: ruby
 
 cache:
+  branch: ha-feature-comprehensive-logging
   directories:
     - foo
-    - bar
-    - baz
-
-before_cache:
-  - cat $CASHER_DIR/md5sums_before
-  - cat $CASHER_DIR/md5sums_after
-  - cat $CASHER_DIR/mtime.yml
-
-install:
-  - cat $CASHER_DIR/paths || true
-  - cat $CASHER_DIR/mtime.yml
-  - mkdir -p foo
-  - mkdir -p bar
-  - echo "FOOBAR" > foo/bar
-  - echo "BARBAZ" > bar/baz
 
 script:
   - true
