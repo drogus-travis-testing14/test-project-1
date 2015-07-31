@@ -1,9 +1,10 @@
 language: ruby
 
-sudo: false
+sudo: required
+services:
+  - docker
 
 cache:
-  branch: ha-feature-comprehensive-logging
   directories:
     - foo
 
@@ -11,4 +12,5 @@ before_install:
   - cat $CASHER_DIR/curl_format
 
 script:
-  - true
+  - mkdir foo
+  - for i in {1..100}; do echo $i > foo/$i.txt; done
