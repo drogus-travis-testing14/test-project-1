@@ -8,9 +8,7 @@ cache:
   directories:
     - foo
 
-before_install:
-  - cat $CASHER_DIR/curl_format
-
 script:
   - mkdir foo
   - for i in {1..100}; do echo $i > foo/$i.txt; done
+  - echo "business ha ha"
