@@ -9,6 +9,6 @@ cache:
     - foo
 
 script:
-  - mkdir foo
+  - if [[ -d foo ]]; then mkdir foo; else echo "cache works woo woo"; fi
   - for i in {1..100}; do if [[ -f foo/$i ]]; then echo "I already exist"; else echo $i > foo/$i.txt; fi; done
   - echo "business ha ha"
