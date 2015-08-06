@@ -1,14 +1,10 @@
 language: ruby
 
-sudo: required
-services:
-  - docker
+sudo: false
 
 cache:
-  directories:
-    - foo
+  bundler: true
+  branch: verbose-logging
 
 script:
-  - if [[ ! -d foo ]]; then mkdir -p foo; else echo "cache works woo woo"; fi
-  - for i in {1..100}; do if [[ -f foo/$i.txt ]]; then echo "foo/$i.txt already exists"; else echo $i > foo/$i.txt; fi; done
-  - echo "business ha ha"
+  - true
