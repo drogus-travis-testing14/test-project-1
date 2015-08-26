@@ -2,5 +2,11 @@ language: objective-c
 osx_image: xcode7
 install: true
 script:
-  - xctool --version
+  - sw_vers -productVersion
   - motion --version
+  - xctool --version
+  - git --version
+  - rvm list
+  - rvm all do ruby -v
+  - rvm all do gem list
+  - brew list --versions
