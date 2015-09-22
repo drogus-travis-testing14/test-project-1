@@ -1,12 +1,10 @@
-language: objective-c
-osx_image: xcode7
-install: true
+language: node_js
+
+node_js:
+  - 0.10
+  
+install:
+  - true
+
 script:
-  - sw_vers -productVersion
-  - motion --version
-  - xctool --version
-  - git --version
-  - rvm list
-  - rvm all do ruby -v
-  - rvm all do gem list
-  - brew list --versions
+  - true
