@@ -1,12 +1,10 @@
 language: ruby
 
 sudo: required
-
-rvm:
-  - 2.1.6
+dist: trusty
 
 install:
-  - find ~ -maxdepth 1 -name .rvm\* -type f -print -exec cat {} \;
+  - hostname
 
 script:
   - true
