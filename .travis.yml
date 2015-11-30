@@ -4,6 +4,6 @@ sudo: false
 
 cache: bundler
 
-#install: true
+install: true
 
 script: true
