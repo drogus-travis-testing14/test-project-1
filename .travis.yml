@@ -15,6 +15,7 @@ addons:
 install:
   - find ~/.ssh || mkdir ~/.ssh
   - cat ~/.ssh/known_hosts || true
+  - cat ~/.ssh/config || true
 
 script: 
   - git clone ssh://git@stash.code.easyscott.com/app/pod-specs.git || cat ~/.ssh/known_hosts
