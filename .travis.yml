@@ -2,6 +2,8 @@ language: objective-c
 
 sudo: false
 
+osx_image: xcode7.1
+
 cache: bundler
 
 install: true
