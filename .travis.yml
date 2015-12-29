@@ -1,22 +1,13 @@
-language: objective-c
-
-osx_image: xcode7
-
-rvm: '2.0'
-
-env:
-  - GIT_SSH_COMMAND="ssh -i ~/.ssh/id_rsa -p 7999"
+language: php
 
 sudo: false
 
-addons:
-  ssh_known_hosts: stash.code.easyscott.com
-
+php:
+  - 7.0
+  - 7.0.1
+  
 install:
-  - find ~/.ssh || mkdir ~/.ssh
-  - cat ~/.ssh/known_hosts || true
-  - cat ~/.ssh/config || true
-
+  - true
+  
 script: 
-  - git clone ssh://git@stash.code.easyscott.com/app/pod-specs.git || cat ~/.ssh/known_hosts
-
+  - true
