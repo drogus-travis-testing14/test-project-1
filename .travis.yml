@@ -1,6 +1,7 @@
 language: php
 
-sudo: false
+sudo: required
+group: legacy
 
 php:
   - 5.5
