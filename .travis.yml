@@ -10,8 +10,7 @@ env:
   global:
     - ELASTICSEARCH_DEB="/tmp/downloads/elasticsearch-1.6.0.deb"
 install:
-  - [ -f $ELASTICSEARCH_DEB ] || wget -O $ELASTICSEARCH_DEB https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.deb
-    sudo dpkg -i $ELASTICSEARCH_DEB
+  - [ -f $ELASTICSEARCH_DEB ] || wget -O $ELASTICSEARCH_DEB https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.deb; sudo dpkg -i $ELASTICSEARCH_DEB
 
 script:
   - true
