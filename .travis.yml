@@ -5,6 +5,7 @@ notifications:
 
 sudo: required
 dist: trusty
+group: edge
 
 rvm:
   - 2.1.8
