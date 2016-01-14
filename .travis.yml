@@ -1,14 +1,25 @@
-language: ruby
+language: python
+# Add or remove version for match with Travis support
+python:
+    - 2.6
+    - 2.7
+    - 3.2
 
-notifications:
-  email: false
+os:
+  - linux
 
-sudo: required
-dist: trusty
-group: edge
+matrix:
+  fast_finish: true
+  allow_failures:
+    - os: osx
+  include:
+    - sudo: required
+      python: 2.7
+      env: ENV=lint
+      before_script: TOX_ENV=lint
 
-rvm:
-  - 2.1.8
+install: echo "Install!"
 
 script:
-  - true
+  - echo $TOX_ENV
+  - echo "Script!"
