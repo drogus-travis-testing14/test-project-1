@@ -1,6 +1,5 @@
-sudo: false
-language: ruby
+sudo: required
+dist: precise
 
-install: true
-
-script: rvm list
+script:
+ - true
