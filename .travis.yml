@@ -1,5 +1,10 @@
 sudo: required
-dist: precise
+language: ruby
+dist: trusty
+
+install: true
 
 script:
- - true
+  - ls -al $HOME/.rvm/config/
+  - cat $HOME/.rvm/config/db
+  - cat $HOME/.rvm/config/user/db
