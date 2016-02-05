@@ -5,6 +5,7 @@ dist: trusty
 install: true
 
 script:
-  - ls -al $HOME/.rvm/config/
-  - cat $HOME/.rvm/config/db
-  - cat $HOME/.rvm/config/user/db
+  - ls -al $rvm_path/config
+  - cat $rvm_path/config/db
+  - cat $HOME/.rvmrc
+  - env
