@@ -1,11 +1,18 @@
 sudo: required
 language: ruby
-dist: trusty
+
+matrix:
+  include:
+  - os: linux
+    sudo: false
+  - os: linux
+    sudo: required
+    dist: trusty
+  - os: osx
+    osx_image: xcode7.2
+
+before_install: travis_debug
 
 install: true
 
-script:
-  - ls -al $rvm_path/config
-  - cat $rvm_path/config/db
-  - cat $HOME/.rvmrc
-  - env
+script: true
