@@ -1,18 +1,8 @@
-sudo: required
+sudo: false
 language: ruby
-
-matrix:
-  include:
-  - os: linux
-    sudo: false
-  - os: linux
-    sudo: required
-    dist: trusty
-  - os: osx
-    osx_image: xcode7.2
 
 before_install: travis_debug
 
-install: true
+install: cat ~/build.sh
 
 script: true
