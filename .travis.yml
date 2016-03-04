@@ -2,8 +2,9 @@ language: objective-c
 osx_image: xcode7.2
 
 cache:
-  - /Library/Rubymotion
-  - /usr/local/bin/
+  directories:
+    - /Library/Rubymotion
+    - /usr/local/bin/
 
 before_install:
   - sudo motion update --verbose
