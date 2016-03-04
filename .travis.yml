@@ -7,7 +7,7 @@ cache:
     - /usr/local/bin/
 
 before_install:
-  - sudo motion update --verbose
+  # - sudo motion update --verbose
   - which motion
   - sleep 3
 
