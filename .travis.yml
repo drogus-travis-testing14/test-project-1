@@ -8,7 +8,7 @@ cache:
     - motion-backup
 
 before_install:
-  - cp motion-backup/motion /usr/local/bin/
+  - cp motion-backup/motion /usr/local/bin/ || true
   - motion --version
   - if [[ `motion --version` != "4.9" ]]; then sudo motion update; fi
   - motion --version
