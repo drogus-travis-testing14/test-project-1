@@ -7,4 +7,6 @@ script:
   - python /tmp/get-pip.py --user --no-wheel
   - export PATH=$PATH:$HOME/Library/Python/2.7/bin
   - pip --version || true
+  - pip install requests
+  - travis_debug
   - sleep 3
