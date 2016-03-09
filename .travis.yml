@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode7.2
 install: true
 script:
-  - fastlane --version
+  - spaceship --version
   - gem update --no-rdoc --no-ri fastlane
-  - fastlane --version
+  - spaceship --version
   - sleep 3
