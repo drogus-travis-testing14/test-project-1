@@ -2,9 +2,9 @@ language: objective-c
 osx_image: xcode7.2
 install: true
 script:
-  - gem list
-  - sudo gem update --no-rdoc --no-ri spaceship | grep spaceship
-  - gem list
-  - gem update --no-rdoc --no-ri spaceship | grep spaceship
-  - gem list
+  - gem list | grep spaceship
+  - sudo gem update --no-rdoc --no-ri spaceship
+  - gem list | grep spaceship
+  - gem update --no-rdoc --no-ri spaceship
+  - gem list | grep spaceship
   - sleep 3
