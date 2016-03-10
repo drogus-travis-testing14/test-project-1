@@ -2,7 +2,9 @@ language: objective-c
 osx_image: xcode7.2
 install: true
 script:
-  - spaceship --version
-  - rvm default do gem update --no-rdoc --no-ri fastlane
-  - spaceship --version
+  - gem list
+  - sudo gem update --no-rdoc --no-ri spaceship
+  - gem list
+  - rvm default do gem update --no-rdoc --no-ri spaceship
+  - gem list
   - sleep 3
