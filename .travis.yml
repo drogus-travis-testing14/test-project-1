@@ -1,10 +1,12 @@
 language: objective-c
 osx_image: xcode7.2
-install: true
+
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install appium
+  - sleep 3
 script:
-  - gem list | grep spaceship
-  - sudo gem update --no-rdoc --no-ri spaceship
-  - gem list | grep spaceship
-  - gem update --no-rdoc --no-ri spaceship
-  - gem list | grep spaceship
+  - travis_debug
   - sleep 3
