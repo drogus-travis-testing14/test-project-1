@@ -1,6 +1,4 @@
 language: ruby
-sudo: false
+sudo: required
 install: true
-script:
-  - cd ~/.ssh
-  - ls -al
+script: true
