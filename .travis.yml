@@ -1,43 +1,9 @@
-sudo: false
-language: node_js
-node_js: 4.2.3
-env:
-- CXX=g++-4.8
-addons:
-  artifacts: true
-  postgresql: '9.4'
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - g++-4.8
-    - xvfb
-services:
-- redis-server
-install:
-- export DISPLAY=':99.0'
-- Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-- npm install
-before_script:
-- psql -c "create database patronage;" -U postgres
-- psql -c "ALTER USER postgres WITH PASSWORD 'password';" -U postgres
+matrix:
+  include:
+    - sudo: false
+    - sudo: required
+    - sudo: required
+      dist: trusty
+install: true
 script:
-- true
-after_success:
-- true
-notifications:
-  email: false
-
-cache:
-  apt: true
-  directories:
-  - node_modules
-deploy:
-  - provider: heroku
-    app: patronage-production
-    skip_cleanup: true
-    api_key: ABCDEF0123456789
-
-    on:
-      repo: patronage/patronage
-      branch: master
+  - df -h
