@@ -1,9 +1,16 @@
 matrix:
   include:
-    - sudo: false
-    - sudo: required
     - sudo: required
       dist: trusty
-install: true
+    - sudo: false
+language: ruby
+rvm:
+  - default
+
+cache: bundler
+
 script:
-  - df -h
+  - true
+
+notifications:
+  email: false
