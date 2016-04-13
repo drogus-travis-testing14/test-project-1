@@ -1,4 +1,4 @@
-language: Objective-C
+language: Objective-c
 osx_image: xcode7.3
 cache:
   directories:
