@@ -8,7 +8,7 @@ matrix:
     - sudo: false
 language: ruby
 rvm:
-  - default
+  - 2.1.2
 
 cache: bundler
 
