@@ -1,7 +1,19 @@
-language: Objective-c
-osx_image: xcode7.3
-cache:
-  directories:
-    - $HOME/.cocoapods/repos
-install: pod setup
-script: true
+sudo: required
+dist: precise
+
+matrix:
+  include:
+    - sudo: required
+      dist: trusty
+    - sudo: false
+language: ruby
+rvm:
+  - default
+
+cache: bundler
+
+script:
+  - true
+
+notifications:
+  email: false
