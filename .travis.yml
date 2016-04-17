@@ -1,13 +1,6 @@
 sudo: required
-dist: precise
+dist: trusty
 
-matrix:
-  include:
-    - sudo: required
-      dist: trusty
-      rvm: 2.1.2
-    - sudo: false
-      rvm: 2.1.2
 language: node_js
 
 node_js:
@@ -16,7 +9,7 @@ node_js:
 install: true
 
 script:
-  - true
+  - cat -n ~/build.sh
 
 notifications:
   email: false
