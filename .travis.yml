@@ -1,15 +1,9 @@
-sudo: required
-dist: trusty
+language: objective-c
 
-language: node_js
-
-node_js:
-  - 4
-
-install: true
+cache: bundler
 
 script:
-  - cat -n ~/build.sh
+  - true
 
 notifications:
   email: false
