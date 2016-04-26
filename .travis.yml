@@ -1,9 +1,12 @@
-language: objective-c
-
-cache: bundler
-
-script:
-  - true
-
-notifications:
-  email: false
+language: Ruby
+services:
+    - docker
+sudo: required
+install: true
+env:
+  matrix:
+    - JOB=1
+    - JOB=2
+    - JOB=3
+    - JOB=4
+    - JOB=5
