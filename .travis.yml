@@ -1,12 +1,11 @@
-language: Ruby
-services:
-    - docker
-sudo: required
-install: true
-env:
-  matrix:
-    - JOB=1
-    - JOB=2
-    - JOB=3
-    - JOB=4
-    - JOB=5
+language: objective-c
+
+cache: bundler
+
+osx_image: xcode6.3
+
+script:
+  - true
+
+notifications:
+  email: false
