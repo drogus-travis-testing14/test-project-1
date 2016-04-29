@@ -16,6 +16,8 @@ notifications:
 
 deploy:
   - provider: opsworks
+    access_key_id: 'AKIAJ6PYJVZKG3XMKOLQ'
+    secret_access_key: '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'
     app_id: 'ab9c9409-1499-4d84-b6b9-ffc3954293fe'
     instance_ids:
       - 'i-fb988160'
