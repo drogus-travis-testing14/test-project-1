@@ -1,3 +1,3 @@
-language: objective-c
-osx_image: xcode7.3
-script: true
+sudo: false
+install: true
+script: mail -s "Test Subject" jodoindo@hotmail.com < /dev/null
