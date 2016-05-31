@@ -1,3 +1,15 @@
-sudo: false
-install: true
-script: mail -s "Test Subject" jodoindo@hotmail.com < /dev/null
+
+language: python
+
+matrix:
+  include:
+    - sudo: false
+    - sudo: required
+      dist: precise
+    - sudo: required
+      dist: trusty
+
+install:
+  - pip install -r requirements.txt
+
+script: true
