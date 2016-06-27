@@ -6,6 +6,8 @@ cache:
   directories:
     - ~/.cocoapods/repos/master
 
+before_install:
+  - gem uninstall cocoapods && gem install cocoapods
 install: pod repo update
 
 script: rvm list
