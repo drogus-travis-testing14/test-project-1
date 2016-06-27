@@ -8,4 +8,4 @@ cache:
 
 install: pod repo update
 
-script: true
+script: rvm list
