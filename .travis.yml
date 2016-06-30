@@ -10,3 +10,4 @@ script:
   - GIT_PAGER=cat git log -1
   - ~/.cocoapods/repos/master
   - GIT_PAGER=cat git log -1
+  - sleep 3
