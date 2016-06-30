@@ -8,6 +8,6 @@ install: true
 script: 
   - cd ~/.cocoapods/repos
   - GIT_PAGER=cat git log -1
-  - ~/.cocoapods/repos/master
+  - cd ~/.cocoapods/repos/master
   - GIT_PAGER=cat git log -1
   - sleep 3
