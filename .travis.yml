@@ -1,14 +1,7 @@
 language: ruby
 sudo: false
-rvm:
-- default
-install:
-- true
-script:
-- true
-matrix:
-  exclude:
-  - rvm: default
+install: true
+script: true
 notifications:
   email: false
   slack:
