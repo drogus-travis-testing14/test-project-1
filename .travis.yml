@@ -1,19 +1,15 @@
 language: ruby
-
 sudo: false
-
 rvm:
-  - default
-
+- default
 install:
-  - true
-
+- true
 script:
-  - true
-
+- true
 matrix:
   exclude:
-    - rvm: default
-
+  - rvm: default
 notifications:
   email: false
+  slack:
+    secure: LHbW87/zoZddziwYR2N87Wcvf4tbSBXyKv6TWSuTmyJDGZfBQzaK8ZK5ZERHI2XMmAQ3X2GnA9vH3Myp9SHyunC/Qa6nwFarXfgvIsSuuI0EyJmz3+wsVRwWOAUZyIjzJtf9lfYWwYfPREaLKlvA+U6buCmYM/vtnYnVdCPc1oQ=
