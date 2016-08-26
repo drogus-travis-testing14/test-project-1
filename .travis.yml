@@ -2,7 +2,9 @@ language: ruby
 sudo: required
 dist: precise
 install: true
-script: true
+script:
+  - cat ~/apt-get-update.log
+  - sudo apt-get update
 notifications:
   email: false
   slack:
