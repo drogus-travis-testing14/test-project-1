@@ -1,8 +1,10 @@
 language: ruby
-sudo: false
+sudo: required
+dist: precise
 install: true
 script: true
 notifications:
   email: false
   slack:
     secure: LHbW87/zoZddziwYR2N87Wcvf4tbSBXyKv6TWSuTmyJDGZfBQzaK8ZK5ZERHI2XMmAQ3X2GnA9vH3Myp9SHyunC/Qa6nwFarXfgvIsSuuI0EyJmz3+wsVRwWOAUZyIjzJtf9lfYWwYfPREaLKlvA+U6buCmYM/vtnYnVdCPc1oQ=
+
