@@ -1,14 +1,16 @@
 language: ruby
-rvm:
-  - 2.0.0
-  - 2.2.1
+
 sudo: false
-script: echo "starting build" && true
-install: gem install dpl
-env:
-  global: CI_HOME=`pwd`/../../
+
+install:
+  - true
+
+script:
+  - true
+
 notifications:
   email: false
+  webhooks: http://requestb.in/1lcasxm1
   slack:
     secure: LHbW87/zoZddziwYR2N87Wcvf4tbSBXyKv6TWSuTmyJDGZfBQzaK8ZK5ZERHI2XMmAQ3X2GnA9vH3Myp9SHyunC/Qa6nwFarXfgvIsSuuI0EyJmz3+wsVRwWOAUZyIjzJtf9lfYWwYfPREaLKlvA+U6buCmYM/vtnYnVdCPc1oQ=
 
