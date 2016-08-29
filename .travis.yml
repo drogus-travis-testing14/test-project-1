@@ -1,10 +1,12 @@
 language: ruby
-sudo: required
-dist: precise
-install: true
-script:
-  - cat ~/apt-get-update.log
-  - sudo apt-get update
+rvm:
+  - 2.0.0
+  - 2.2.1
+sudo: false
+script: echo "starting build" && true
+install: gem install dpl
+env:
+  global: CI_HOME=`pwd`/../../
 notifications:
   email: false
   slack:
