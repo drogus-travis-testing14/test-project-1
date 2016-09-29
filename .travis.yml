@@ -1,23 +1,10 @@
-language: objective-c
+language: ruby
 
-matrix:
-  include:
-    - osx_image: xcode8
-    - osx_image: xcode7.3
-    - osx_image: xcode7.2
-    - osx_image: xcode7.1
-    - osx_image: xcode7
-    - osx_image: xcode6.4
-    - osx_image: beta-xcode6.3
-    - osx_image: beta-xcode6.2
-    - osx_image: beta-xcode6.1
+sudo: required
 
-install: true
+dist: trusty
 
-script: 
-  - cd ~/.cocoapods/repos
-  - GIT_PAGER=cat git log -1
-  - cd ~/.cocoapods/repos/master
-  - GIT_PAGER=cat git log -1
-  - pod repo update > /dev/null
-  - sleep 3
+cache: bundler
+
+script:
+  - true
