@@ -1,8 +1,16 @@
 language: android
 
+addons:
+  apt:
+    packages:
+      - oracle-jdk8-installer
+
 sudo: required
 
 dist: trusty
+
+jdk:
+  - oraclejdk8
 
 install:
   - true
