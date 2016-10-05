@@ -21,6 +21,7 @@ install:
   - true
 
 script:
+  - env | grep HOME | sort
   - cat ~/build.sh
 
 notifications:
