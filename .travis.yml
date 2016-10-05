@@ -1,16 +1,21 @@
-language: android
-
-addons:
-  apt:
-    packages:
-      - oracle-jdk8-installer
-
+env:
+  global:
+  - MALLOC_ARENA_MAX=2
+  - ADB_INSTALL_TIMEOUT=10
 sudo: required
-
-dist: trusty
-
-jdk:
-  - oraclejdk8
+dist: precise
+language: android
+jdk: oraclejdk8
+android:
+  components:
+  - tools
+  - extra-android-m2repository
+  - extra-google-m2repository
+  - extra-google-google_play_services
+  - build-tools-24.0.2
+  - android-24
+  licenses:
+  - android-sdk-license-.+
 
 install:
   - true
