@@ -1,28 +1,15 @@
-env:
-  global:
-  - MALLOC_ARENA_MAX=2
-  - ADB_INSTALL_TIMEOUT=10
-sudo: required
-dist: precise
-language: android
-jdk: oraclejdk8
-android:
-  components:
-  - tools
-  - extra-android-m2repository
-  - extra-google-m2repository
-  - extra-google-google_play_services
-  - build-tools-24.0.2
-  - android-24
-  licenses:
-  - android-sdk-license-.+
+language: erlang
+
+otp_release:
+  - 18.0
+
+sudo: false
 
 install:
   - true
 
 script:
-  - env | grep HOME | sort
-  - cat ~/build.sh
+  - true
 
 notifications:
   email: false
