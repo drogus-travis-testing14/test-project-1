@@ -5,6 +5,10 @@ otp_release:
 
 sudo: false
 
+cache:
+  directories:
+    - foo
+
 install:
   - true
 
