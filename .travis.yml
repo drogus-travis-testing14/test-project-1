@@ -1,12 +1,9 @@
 language: ruby
-
-sudo: false
-
-install:
-  - true
-
+sudo: required
+before_script:
+  - gcloud compute instances list
 script:
-  - true
+  - gcloud compute instances list
 
 notifications:
   email: false
