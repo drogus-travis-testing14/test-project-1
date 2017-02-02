@@ -2,9 +2,11 @@ language: ruby
 sudo: false
 dist: precise
 
-install: false
+install:
+  - false
 
-script: false
+script:
+  - false
 
 notifications:
   email: false
