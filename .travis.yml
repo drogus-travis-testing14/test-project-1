@@ -1,5 +1,6 @@
 language: ruby
 sudo: false
+dist: precise
 
 install: false
 
