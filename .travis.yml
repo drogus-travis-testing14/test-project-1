@@ -3,10 +3,10 @@ sudo: false
 dist: precise
 
 install:
-  - false
+  - true
 
 script:
-  - false
+  - true
 
 notifications:
   email: false
