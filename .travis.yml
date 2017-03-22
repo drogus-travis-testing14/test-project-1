@@ -12,9 +12,9 @@ addons:
   sauce_connect:
     username: travisci
     jwt:
-      secure: "hIN7bM9152CP8o6cGuNJhL2xbXGf1at9PTtUejNBGMBe6EWbCbmCL5oAB73SA4rRh/HaUtKT8HRhPS6dk+vPN+kbIpwTQABlhDH4KGfy4Ps0Vx0eF93iZdfaaJcnEFMAnVT+pKFXPUJjtesOCXdw8MJUNSob0dUV7JY3LfykMxc="
+      secure: "WqZR5YKaRCqp9yJRamwZBvuTrzgytCyA5EJR0g0O0cSwZH6Ce7jbWwiuoVjWwi/5jb+qDaT5Ix6GG17uYvfUyWAMCr6jxwDmo/unPGbTWZYc1YXshL2XCRppzwMHK53Enu48KucJkVMfTzTqR1p3f2NeygvkP07iRvb3Yk+y4oY="
   jwt:
-    secure: "hIN7bM9152CP8o6cGuNJhL2xbXGf1at9PTtUejNBGMBe6EWbCbmCL5oAB73SA4rRh/HaUtKT8HRhPS6dk+vPN+kbIpwTQABlhDH4KGfy4Ps0Vx0eF93iZdfaaJcnEFMAnVT+pKFXPUJjtesOCXdw8MJUNSob0dUV7JY3LfykMxc="
+    secure: "WqZR5YKaRCqp9yJRamwZBvuTrzgytCyA5EJR0g0O0cSwZH6Ce7jbWwiuoVjWwi/5jb+qDaT5Ix6GG17uYvfUyWAMCr6jxwDmo/unPGbTWZYc1YXshL2XCRppzwMHK53Enu48KucJkVMfTzTqR1p3f2NeygvkP07iRvb3Yk+y4oY="
 
 notifications:
   email: false
