@@ -8,6 +8,14 @@ install:
 script:
   - true
 
+addons:
+  sauce_connect:
+    username: travisci
+    jwt:
+      - secure: "QaPT4WoPyh/doH0OuuwdVLGbwbstjWJmjY3WWmbN0dOC3ifAApgDaUjsaQefePXZcBUU9E+qBgFXLvBeURRlcfdVfm1+2LcTAQeYnOffiC1qGo5S/qThGdUSFL5E9Ahi1L3xn4THWfrne5qxF12BLgKVe++yw1HjMbfFTNAJKtg="
+  jwt:
+    - secure: "QaPT4WoPyh/doH0OuuwdVLGbwbstjWJmjY3WWmbN0dOC3ifAApgDaUjsaQefePXZcBUU9E+qBgFXLvBeURRlcfdVfm1+2LcTAQeYnOffiC1qGo5S/qThGdUSFL5E9Ahi1L3xn4THWfrne5qxF12BLgKVe++yw1HjMbfFTNAJKtg="
+
 notifications:
   email: false
 
