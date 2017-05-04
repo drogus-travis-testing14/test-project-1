@@ -1,20 +1,7 @@
 language: ruby
-sudo: false
-dist: precise
-
-install:
-  - true
-
-script:
-  - env
-  
+install: true
+script: env
 filter_secure: true
-
-addons:
-  sauce_connect:
-    username: travisci
-    jwt:
-      secure: "WqZR5YKaRCqp9yJRamwZBvuTrzgytCyA5EJR0g0O0cSwZH6Ce7jbWwiuoVjWwi/5jb+qDaT5Ix6GG17uYvfUyWAMCr6jxwDmo/unPGbTWZYc1YXshL2XCRppzwMHK53Enu48KucJkVMfTzTqR1p3f2NeygvkP07iRvb3Yk+y4oY="
 
 notifications:
   email: false
