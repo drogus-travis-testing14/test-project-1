@@ -6,7 +6,9 @@ install:
   - true
 
 script:
-  - true
+  - env
+  
+filter_secure: true
 
 addons:
   sauce_connect:
