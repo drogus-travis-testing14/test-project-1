@@ -1,8 +1,15 @@
 language: c
 dist: trusty
 sudo: false
-install: sudo -E apt-get -yq update
+install: true
 script: env
+
+addons:
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
 
 notifications:
   email: false
