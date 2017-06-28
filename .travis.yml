@@ -1,7 +1,8 @@
-language: ruby
-install: true
+language: c
+dist: trusty
+sudo: false
+install: apt-get update
 script: env
-filter_secure: true
 
 notifications:
   email: false
