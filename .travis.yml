@@ -1,8 +1,12 @@
 language: c
 dist: trusty
-sudo: false
+sudo: required
 install: true
 script: env
+
+deploy:
+  provider: script
+  script: echo true
 
 # addons:
 #   apt:
