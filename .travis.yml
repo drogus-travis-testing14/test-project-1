@@ -1,4 +1,4 @@
 language: generic
 sudo: false
 
-script: echo foo
+script: printenv
